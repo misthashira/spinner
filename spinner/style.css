@@ -1,0 +1,240 @@
+body{
+    background-color: red;
+}
+.spinner{
+    width: 450px;
+    height: 450px;
+    border: 5px black solid ;
+    border-radius: 50%;
+    align-self: center;
+    margin-left: 30%;
+    margin-top: 8%;
+    /* display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center; */
+    animation:  1s linear infinite;
+    animation-name: rotate ;
+    animation-duration: 10s;
+}
+.circle{
+    background-color: black;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 35%;
+    margin-top: -40%;
+    animation-name: rotate ;
+    animation-duration: 1s;
+}
+#square{
+    border: 3px solid #000;
+    z-index: 10;
+    position: relative;
+    top: 60px;
+    left: -7.5px; 
+    width: 20px;
+    height: 20px;
+    transform: rotateZ(135deg);
+    border-top: red 3px solid;
+    border-left:   red 3px solid;
+}
+#square:hover{
+    width: 30px;
+    height: 30px;
+}
+#mini{
+    border: #000 3px solid;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 40px;
+    left: 135px;
+    border-top: red 3px solid;
+    border-right:   red 3px solid;
+    transform: rotateZ(225deg);
+    animation: glow ;
+    animation-duration: 10s;
+}
+.min:hover{
+    width: 30px;
+    height: 30px;
+    animation: glow ;
+    animation-duration: 10s;
+    box-shadow: 0px 0px 50px blue;
+}
+.circle1{
+    background-color: black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 165px;
+    left: -40px;
+}
+#c1:hover{
+    height: 90px;
+    width: 90px;
+    box-shadow: 0px 0px 50px blue;
+}
+.square1{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 320px;
+    left: 190px;
+}
+.circle2{
+    background-color: black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    right: -410px;
+
+
+}
+.square2{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -280px;
+    left: 190px;
+}
+@keyframes rotate{
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+@keyframes rotate{
+    100%{
+        transform: rotatez(-360deg);
+    }
+}
+@keyframes glow{
+    100%{
+       box-shadow: 10px , 10px , 50px blue;
+    }
+}
+@media screen and (max-width:900px ) {
+    body{
+        background-color: red;
+    }
+    .spinner{
+        width: 300px;
+        height: 300px;
+        border: 5px rgba(255, 255, 255, 0.416) solid ;
+        border-radius: 50%;
+        align-self: center;
+        margin-left: 1%;
+        margin-top: 8%;
+        /* display: flex;
+        justify-content: center;
+        justify-self: center;
+        align-self: center; */
+        /* animation:  1s linear infinite;
+        animation-name: rotate ;
+        animation-duration: 10s; */
+    }
+    .circle{
+        background-color: black;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: 35%;
+        margin-top: -30%;
+        /* animation-name: rotate ;
+        animation-duration: 1s; */
+    }
+    #square{
+        border: 3px solid #000;
+        z-index: 10;
+        position: relative;
+        top: 60px;
+        left: -7.5px; 
+        width: 10px;
+        height: 10px;
+        transform: rotateZ(135deg);
+        border-top: red 3px solid;
+        border-left:   red 3px solid;
+    }
+    #square:hover{
+        width: 20px;
+        height: 20px;
+    }
+    #mini{
+        border: #000 3px solid;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 40px;
+        left: 135px;
+        border-top: red 3px solid;
+        border-right:   red 3px solid;
+        transform: rotateZ(225deg);
+    }
+    #mini:hover{
+        width: 20px;
+        height: 20px;
+        animation: glow ;
+        animation-duration: 10s;
+    }
+    .circle1{
+        background-color: black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 165px;
+        left: -20px;
+    }
+    #c1:hover{
+        height: 60px;
+        width: 60px;
+    }
+    .square1{
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 220px;
+        left: 150px;
+    }
+    .circle2{
+        background-color: black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: -270px;
+    
+    
+    }
+    .square2{
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: -185px;
+        left: 105px;
+    }
+    /* @keyframes rotate{
+        100%{
+            transform: rotatez(360deg);
+        }
+    }
+    @keyframes rotate{
+        100%{
+            transform: rotatez(-360deg);
+        }
+    }
+    @keyframes glow{
+        50%{
+           box-shadow: 1ge0px , 10px , 50px blue;
+        }
+    } */
+}
